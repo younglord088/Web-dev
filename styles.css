@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, p {
+    margin: 20px 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.btn {
+    margin-top: 20px;
+}

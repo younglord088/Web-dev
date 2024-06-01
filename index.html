@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center my-5">
+        <h1 class="text-danger">AWARD WINNING</h1>
+        <h2 class="font-weight-bold">DIGITAL MARKETING AGENCY</h2>
+        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus.</p>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#contactModal">CONTACT US</button>
+    </div>
+    <div class="container text-center">
+        <img src="path-to-your-image.jpg" class="img-fluid" alt="Person Image">
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Talk to us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="workEmail">Work email*</label>
+                            <input type="email" class="form-control" id="workEmail" placeholder="Enter your work email">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">First name*</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last name*</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="consentCheck">
+                            <label class="form-check-label" for="consentCheck">I agree to terms and conditions, and provide consent to send me communication.</label>
+                        </div>
+                        <button type="submit" class="btn btn-danger mt-3">Contact Us</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
