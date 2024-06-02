@@ -1,61 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Agency</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container text-center my-5">
-        <h1 class="text-danger">AWARD WINNING</h1>
-        <h2 class="font-weight-bold">DIGITAL MARKETING AGENCY</h2>
-        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus.</p>
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#contactModal">CONTACT US</button>
-    </div>
-    <div class="container text-center">
-        <img src="path-to-your-image.jpg" class="img-fluid" alt="Person Image">
-    </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Talk to us</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="text-section">
+                <h1>AWARD WINNING</h1>
+                <h2>DIGITAL MARKETING AGENCY</h2>
+                <p>
+                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
+                </p>
+                <button onclick="window.location.href= 'contactForm.html';">
+            Contact Us
+          </button>
+            </div>
+            <div class="image-section">
+                <img src="./images/hero.png" alt="Award Winning Agency" />
+            </div>
+        </div>
+    </header>
+    <section class="services">
+        <h3>WHAT WE DO</h3>
+        <h2>SERVICES PROVIDE FOR YOU</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae orci nec eros ultricies tempus.
+        </p>
+        <div class="service-items">
+            <div class="service-item">
+                <img src="./images/1.png" alt="Service 1" />
+            </div>
+            <div class="service-item">
+                <img src="./images/2.png" alt="Service 2" />
+            </div>
+            <div class="service-item" style="background-color: #ff3366; color: white">
+                <div class="service-text">
+                    <img src="./images/icon.png" alt="Service 2" style="height: 37px" />
+                    <h4>WEB DEVELOPMENT</h4>
+                    <p style="color: white">
+                        Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque
+                    </p>
+                    <button>Read More</button>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="workEmail">Work email*</label>
-                            <input type="email" class="form-control" id="workEmail" placeholder="Enter your work email">
-                        </div>
-                        <div class="form-group">
-                            <label for="firstName">First name*</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last name*</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="consentCheck">
-                            <label class="form-check-label" for="consentCheck">I agree to terms and conditions, and provide consent to send me communication.</label>
-                        </div>
-                        <button type="submit" class="btn btn-danger mt-3">Contact Us</button>
-                    </form>
+            </div>
+            <div class="service-item">
+                <img src="./images/3.png" alt="Service 3" />
+            </div>
+        </div>
+    </section>
+    <section class="why-choose-us">
+        <h3>WHY CHOOSE US</h3>
+        <h2>WHY WE ARE BEST</h2>
+        <div class="features">
+            <div class="feature-item">
+                <img src="./images/1.svg" alt="" />
+                <h4>Clarified Vision & Target</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="feature-item">
+                <img src="./images/2.svg" alt="" />
+                <h4>High Performance</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="feature-item">
+                <img src="./images/3.svg" alt="" />
+                <h4>Maintain Security</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="feature-item">
+                <img src="./images/4.svg" alt="" />
+                <h4>Better Strategy & Quality</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="projects">
+      <h3>OUR PROJECT</h3>
+      <h2>WHY WE ARE BEST</h2>
+      <div class="project-content" style="margin-left: 20%">
+        <img src="./images/image.png" alt="Project Image" />
+        <div class="project-details">
+          <div class="project-detail-item">
+            <h4>Genderless Kei – Japan’s Hot</h4>
+            <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
+          </div>
+          <div class="project-detail-item highlighted">
+            <h4>Better Strategy & Quality</h4>
+            <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
+          </div>
+          <div class="project-detail-item">
+            <h4>Genderless Kei – Japan’s Hot</h4>
+            <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="projects">
+        <h3>OUR PROJECT</h3>
+        <h2>WHY WE ARE BEST</h2>
+        <div class="project-content">
+            <img src="./images/image.png" alt="Project Image" />
+            <div class="project-details">
+                <div class="project-detail-item">
+                    <h4>Genderless Kei – Japan’s Hot</h4>
+                    <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
+                </div>
+                <div class="project-detail-item highlighted">
+                    <h4>Better Strategy & Quality</h4>
+                    <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
+                </div>
+                <div class="project-detail-item">
+                    <h4>Genderless Kei – Japan’s Hot</h4>
+                    <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="company-growth">
+        <h3>EXPERTS GROWTH</h3>
+        <h2>OUR COMPANY GROWTH</h2>
+        <div class="growth-stats">
+            <div class="stat-item">
+                <img src="./images/heart (2).svg" alt="heart" />
+                <h5>199+</h5>
+                <p>Satisfied Customers</p>
+            </div>
+            <div class="stat-item">
+                <img src="./images/clock (3).svg" alt="heart" />
+                <h5>1591+</h5>
+                <p>Days Of Operation</p>
+            </div>
+            <div class="stat-item">
+                <img src="./images/Path 4402.svg" alt="heart" />
+                <h5>283+</h5>
+                <p>Complete Projects</p>
+            </div>
+            <div class="stat-item">
+                <img src="./images/Path 4406.svg" alt="heart" />
+                <h5>75+</h5>
+                <p>Win Awards</p>
+            </div>
+        </div>
+    </section>
+    <section class="clients-feedback">
+        <h3>CLIENT'S FEEDBACK</h3>
+        <h2>PEOPLE SAY'S ABOUT US !</h2>
+        <p>
+            Jannat Tumpa: The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.
+        </p>
+        <p><strong>JANNAT TUMPA</strong> - COO, AMERMAN ENTERPRISES, INC.</p>
+    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    <section class="partners">
+        <div class="partner-logos">
+            <img src="./images/Group 500.png" alt="companies" />
+        </div>
+    </section>
 </body>
+
 </html>
