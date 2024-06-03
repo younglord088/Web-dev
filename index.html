@@ -9,19 +9,18 @@
       .container {
         position: relative;
         display: flex;
+        justify-content: center;
       }
-      .image {
-        max-width: 100px;
-        height: auto;
-        display: block;
-        transition: transform 0.3s ease-in-out;
-      }
+
       .dots {
         position: absolute;
         top: 20px;
-        left: 50%;
+        left: 22%;
         transform: translateX(-50%);
+        /* margin-top: 20px; */
+        padding: auto;
       }
+
       .dot {
         display: inline-block;
         width: 10px;
@@ -29,6 +28,7 @@
         background-color: black;
         border-radius: 50%;
         margin: 0 5px;
+        transition: background-image 0.3s ease-in-out;
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
@@ -56,38 +56,66 @@
 
     <section class="services">
       <h3>WHAT WE DO</h3>
-      <h2>SERVICES PROVIDE FOR YOU</h2>
-      <span>
+      <div class="heading-and-description">
+        <h2>SERVICES PROVIDE FOR YOU</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          vitae orci nec eros ultricies tempus.
+          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+          Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+          nec risus finibus feugiat et fermentum
         </p>
-      </span>
+      </div>
       <div class="service-items">
-        <div class="service-item" onmouseover="changeDot(0)">
-          <img src="./images/1.png" alt="Service 1" />
-          <div class="service-text">
-            <img src="./images/icon.png" alt="Service Icon" class="icon" />
-            <h4>CREDIT CARD MANAGEMENT</h4>
-                <p>
-                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque
-                </p>
-                <button onclick="window.open('https://fylehq.com', '_blank')">
-                    Read More
-                </button>
+        <div class="service-items">
+          <div class="service-item" onmouseover="changeDot(0)">
+            <img src="./images/1.png" alt="Service 1" />
+            <div class="service-text">
+              <img src="./images/icon.png" alt="Service Icon" class="icon" />
+              <h4>EXPENSE REPORTING</h4>
+              <p>
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque
+              </p>
+              <button onclick="window.open('https://fylehq.com', '_blank')">
+                Read More
+                <img
+                  src="./images/arrow.svg"
+                  alt="arrow"
+                  style="
+                    height: 20px;
+                    width: 20px;
+                    object-fit: contain;
+                    margin-left: 8px;
+                    vertical-align: middle;
+                  "
+                />
+              </button>
+            </div>
           </div>
         </div>
+
         <div class="service-item" onmouseover="changeDot(1)">
           <img src="./images/3.png" alt="Service 1" />
           <div class="service-text">
             <img src="./images/icon.png" alt="Service Icon" class="icon" />
-            <h4>DIGITAL MARKETING</h4>
-                <p>
-                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque
-                </p>
-                <button onclick="window.open('https://fylehq.com', '_blank')">
-                    Read More
-                </button>
+            <h4>CREDIT CARD MANAGEMENT</h4>
+            <p>
+              Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+              Pellentesque
+            </p>
+            <button onclick="window.open('https://fylehq.com', '_blank')">
+              Read More
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                style="
+                  height: 20px;
+                  width: 20px;
+                  object-fit: contain;
+                  margin-left: 8px;
+                  vertical-align: middle;
+                "
+              />
+            </button>
           </div>
         </div>
         <div class="service-item" onmouseover="changeDot(2)">
@@ -101,6 +129,17 @@
             </p>
             <button onclick="window.open('https://fylehq.com', '_blank')">
               Read More
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                style="
+                  height: 20px;
+                  width: 20px;
+                  object-fit: contain;
+                  margin-left: 8px;
+                  vertical-align: middle;
+                "
+              />
             </button>
           </div>
         </div>
@@ -108,13 +147,25 @@
           <img src="./images/1.png" alt="Service 3" />
           <div class="service-text">
             <img src="./images/icon.png" alt="Service Icon" class="icon" />
-            <h4>EXPENSE REPORTING</h4>
-                <p>
-                    Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque
-                </p>
-                <button onclick="window.open('https://fylehq.com', '_blank')">
-                    Read More
-                </button>
+            <h4>DIGITAL MARKETING</h4>
+            <p>
+              Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+              Pellentesque
+            </p>
+            <button onclick="window.open('https://fylehq.com', '_blank')">
+              Read More
+              <img
+                src="./images/arrow.svg"
+                alt="arrow"
+                style="
+                  height: 20px;
+                  width: 20px;
+                  object-fit: contain;
+                  margin-left: 8px;
+                  vertical-align: middle;
+                "
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -155,28 +206,36 @@
       </div>
     </section>
 
-    
     <section class="projects">
-        <h3>OUR PROJECT</h3>
-        <h2>WHY WE ARE BEST</h2>
-        <div class="project-content">
-          <img id="project-image" src="./images/image.png" alt="Project Image" />
-          <div class="project-details">
-            <div class="project-detail-item" data-image="https://mandanparks.com/wp-content/uploads/2023/03/universal.jpg">
-              <h4>Genderless Kei – Japan’s Hot</h4>
-              <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
-            </div>
-            <div class="project-detail-item" data-image="https://images.ctfassets.net/p0qf7j048i0q/E3C718B6580F40C3B5C7D8D1E86B4A6E/f3dbff6e10f35df96a79d58b6039b954/i499343530.jpg?w=3840&q=75&h=3840&fm=webp">
-              <h4>Better Strategy & Quality</h4>
-              <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
-            </div>
-            <div class="project-detail-item" data-image="./images/image3.jpg">
-              <h4>Genderless Kei – Japan’s Hot</h4>
-              <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
-            </div>
+      <h3>OUR PROJECT</h3>
+      <h2>WHY WE ARE BEST</h2>
+      <div class="project-content">
+        <img id="project-image" src="./images/image.png" alt="Project Image" />
+        <div class="project-details">
+          <div
+            class="project-detail-item"
+            onclick="changeImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqVnn2r6MabVHOZrR9xM2lWIoyo04Zpl57A&usqp=CAU')"
+          >
+            <h4>Genderless Kei – Japan’s Hot</h4>
+            <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
+          </div>
+          <div
+            class="project-detail-item"
+            onclick="changeImage('https://www.allrecipes.com/thmb/B-OTFUgCWDzoqr9TH4sjY5AjdPY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-236973-CreamyAlfredoSauce-0238-4x3-1-01e7091f47ae452d991abe32cbed5921.jpg')"
+          >
+            <h4>Better Strategy & Quality</h4>
+            <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
+          </div>
+          <div
+            class="project-detail-item"
+            onclick="changeImage('./images/image3.jpg')"
+          >
+            <h4>Genderless Kei – Japan’s Hot</h4>
+            <p>Set to launch on the manufacturer’s new A1200 screen in 2023.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <section class="company-growth">
       <h3>EXPERTS GROWTH</h3>

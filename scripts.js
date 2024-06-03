@@ -1,35 +1,30 @@
-document.addEventListener('DOMContentLoaded', function () {
-    function changeImage(imagePath) {
-      console.log(imagePath);
-      document.getElementById("project-image").src = imagePath;
-    }
+function changeImage(imagePath) {
+    console.log(imagePath);
+    document.getElementById("project-image").src = imagePath;
+  }
   
-    const projectDetailItems = document.querySelectorAll('.project-detail-item');
-    projectDetailItems.forEach(item => {
-      item.addEventListener('click', function () {
-        const imagePath = this.getAttribute('data-image');
-        changeImage(imagePath);
-      });
+  const dotImages = [
+    "./images/onHover.png",
+    "./images/onHover.png",
+    "./images/onHover.png",
+    "./images/onHover.png",
+  ];
+  const dots = document.querySelectorAll(".dot");
+  
+  function changeDot(index) {
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.style.width = "20px"; 
+        dot.style.height = "20px"; 
+        dot.style.backgroundColor = "transparent"; 
+        dot.style.backgroundImage = `url(${dotImages[i]})`;
+        dot.style.backgroundSize = "cover";
+        dot.style.backgroundPosition = "center";
+      } else {
+        dot.style.width = "10px"; 
+        dot.style.height = "10px"; 
+        dot.style.backgroundColor = "black"; 
+        dot.style.backgroundImage = "none"; 
+      }
     });
-  
-    const dotImages = [
-      "./images/hover-dot.png",
-      "./images/hover-dot.png",
-      "./images/hover-dot.png",
-      "./images/hover-dot.png",
-    ];
-    const dots = document.querySelectorAll(".dot");
-  
-    function changeDot(index) {
-      dots.forEach((dot, i) => {
-        if (i === index) {
-          dot.style.backgroundImage = `url(${dotImages[i]})`;
-          dot.style.backgroundSize = "contain";
-          dot.style.backgroundPosition = "center";
-        } else {
-          dot.style.backgroundImage = "none";
-        }
-      });
-    }
-  });
-  
+  }
