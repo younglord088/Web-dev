@@ -20,4 +20,32 @@ This project provides the Pure HTML,CSS and JavaScript code for a Digital Market
    - `./images/3.png`
 3. **Open the Contact.html file**: Open `contact.html` and edit the GetForm.io link with your custom link.
 
+## How to Contribute
+I welcome contributions from the community. To contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+5. Open a pull request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+For any questions or suggestions, feel free to contact me:
+
+- **Name**: Yash Panjwani
+- **Email**: [yashmpanjwani@gmail.com](mailto:yashmpanjwani@gmail.com)
+- **GitHub**: [younglord088](https://github.com/younglord088)
+
 
